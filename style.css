@@ -1,0 +1,252 @@
+
+
+/* Global*/
+
+* {
+	box-sizing: border-box;
+}
+
+
+a { 
+    color:rgb(38, 89, 46);
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(174, 224, 255);
+    color:rgb(67, 27, 10);
+}
+
+
+
+/* Header */ 
+
+header {
+    background-color:#74e72b;
+    padding-top: .5em;
+    border-bottom: rgb(67, 27, 10) solid 5px;
+}
+
+header .logo {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.logo,  header a {
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px 15px;
+    display: block;
+}
+
+header a:hover{
+    color:rgb(67, 27, 10);
+    font-weight: bold;  
+}
+
+
+
+
+/*Showcase*/
+
+#showCase {
+    min-height: 300px;
+    background-image: url(/showcase);
+    background-repeat:  no-repeat;
+    background-size: inherit;
+    background-position: 0px -100px;
+    border-bottom: rgb(67, 27, 10) solid 3px;
+}
+
+#showCase h1 {
+    margin-top: 0;
+    padding-top: 70px;
+    color: rgb(38, 89, 46);
+    font-size: 40px;
+    text-align: center;
+    text-shadow: black 1px 2px;
+
+}  
+
+
+#showCase p {
+    color: rgb(38, 89, 46);
+    text-align: center;
+    text-shadow: black 1px 2px;
+
+}
+
+
+
+
+/* Second Paragraph */
+
+
+#secondary figure{
+    margin: 0;
+    position: relative;
+}
+
+
+#secondary img {
+    max-width: 100%;
+}
+
+#secondary h2, p {
+    margin-left: .5em;
+}
+
+
+
+
+/* Second Paragraph Figure*/
+
+
+figcaption {
+	font-size: .9em;
+	line-height: 1.5;
+    color: #fff;
+    padding: 1em;
+    background: rgba(67, 27, 10, 0.735);
+    position: absolute;
+    bottom: 5.8px;
+    width: 100%;
+}
+
+
+
+
+/* Align Paragraphs Center*/
+
+#primary, #secondary, #third{
+    text-align: center;
+}
+
+
+
+
+/* Footer */
+
+footer{
+    background-color: #5d2c04;
+    color: white;
+    text-align: center;
+    padding: 30px
+}
+
+
+
+
+
+
+
+/* Media Quieries */ 
+
+@media (min-width: 769px) {
+
+    
+/* Global */
+
+.container{
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+.logo,
+nav,
+nav ul,
+nav li {
+    display: inline-block;
+}
+
+.logo {
+    margin-right: 290px;
+}
+
+
+/* Showcase */
+
+
+#showCase {
+    min-height: 300px;
+    background-image: url(/showcase);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-position: 0px -100px;
+}
+
+/* First Paragraph */
+
+
+#primary{
+    float: left;
+    width: 33%;
+}
+
+
+
+/* Second Paragraph */
+
+
+#secondary{
+    float: left;
+    width: 34%;
+}
+
+#secondary h2 {
+    text-align: center;
+
+}
+
+
+
+/* Second Paragraph Figure*/
+
+
+
+
+/* Third Paragraph */
+
+
+#third {
+    float: right;
+    width: 33%;
+}
+
+
+/* misc */
+ 
+
+ /* Align Paragraph Left*/
+
+#primary, #secondary, #third{
+    text-align: left;
+}
+
+
+
+/* Footer*/
+
+footer {
+    clear: both;
+}
+
+
+
+}
+
+
+
